@@ -23,6 +23,9 @@ header{
 
 .button{
   height: calc(3rem + 1vw);
+  border-radius: calc(0.5rem + 1vw);
+  font-size: calc(0.8rem + 1vw);
+  font-weight: bolder;
 }
 /*AUFBAU GRID___________________________________________  */
 .fotogrid{
