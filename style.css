@@ -31,6 +31,7 @@ header{
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
   gap: calc(1rem + 1vw);
+  position: relative;
 }
 
 .one{
@@ -79,8 +80,18 @@ header{
 }
 
 .ten{
-  grid-area: 4/2/5/3;
+  grid-area: 4/1/5/2;
   background-image: url(/10.jpg);
+}
+
+.eleven{
+  grid-area: 4/2/5/3;
+  background-image: url(/11.png);
+}
+
+.twelve{
+  grid-area: 4/3/5/4;
+  background-image: url(/11.png);
 }
 
 /*STYLING DER FOTOS______________________________________________  */
@@ -90,5 +101,76 @@ header{
   aspect-ratio: 1;
   background-size: cover;
   background-position: center;
+  border-radius: calc(1rem + 1vw);
+  position: relative;
  }
 
+.mgfotos::before{
+  content: "Andreas";
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  padding: 5px;
+  font-size: calc(1rem + 1vw);
+  background-color: rgba(103, 95, 95, 0.5);
+  color: white;
+  border-radius: calc(0.5rem + 1vw);
+}
+/*KEGELKÖNIG______________________________________  */
+.six::after{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-family: fontawesome;
+  content: "\f521";
+  color: white;
+  font-size: calc(3rem + 1vw);
+}
+
+/*PUMPENKÖNIG__________________________________________  */
+.ten::after{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  font-family: fontawesome;
+  content: "\30";
+  color: white;
+  font-size: calc(3rem + 1vw);
+}
+
+.two::before{
+  content: "Anne";
+}
+
+.three::before{
+  content: "Christoph";
+}
+.four::before{
+  content: "Frank";
+}
+.five::before{
+  content: "Kerstin";
+}
+.six::before{
+  content: "Klaus";
+}
+.seven::before{
+  content: "Michael";
+}
+.eight::before{
+  content: "Monika";
+}
+.nine::before{
+  content: "Sylvia";
+}
+.ten::before{
+  content: "Uwe";
+}
+
+.eleven::before{
+  content: "Gast";
+}
+
+.twelve::before{
+  content: "Gast";
+}
