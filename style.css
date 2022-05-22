@@ -12,8 +12,19 @@ header{
   height: calc(5rem + 1vw);
   background-color: var(--bgColor);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 5%;
+  letter-spacing: calc(0.3rem + 1vw);
+  font-size: calc(2rem + 1vw);
+  font-weight: bolder;
+}
+
+.vereinName{
+}
+
+.vereinsLogo{
+  width: 25vw;
 }
 
 .startmenu{
@@ -22,15 +33,15 @@ header{
 }
 
 .button {
-  width: 100vw;
+  width: 97vw;
   height: calc(3rem + 1vw);
   border-radius: calc(0.5rem + 1vw);
   font-size: calc(0.8rem + 1vw);
   font-weight: bolder;
+  background-color: rgba(81, 167, 238, 0.5)
 }
 /*AUFBAU GRID___________________________________________  */
 .fotogrid{
-  border: 2px solid green;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr; */
@@ -101,7 +112,6 @@ header{
 
 /*STYLING DER FOTOS______________________________________________  */
 .mgfotos{
-  border: 2px solid blue;
   width: 29vw;
   aspect-ratio: 1;
   background-size: cover;
@@ -198,7 +208,7 @@ label[for=name]{
   font-size: calc(1rem + 1vw);
   text-decoration: underline;
 }
-
+/* TERMINE___________________________________________________ */
 table{
   width: 100vw;
   border-radius: calc(1rem + 1vw);
@@ -207,4 +217,32 @@ table{
 
 th, td{
   border: 2px solid black;
+}
+
+/* STATISTIK__________________________________________________ */
+#statistik{
+  text-align: center;
+  font-size: calc(5rem + 1vw);
+}
+
+@keyframes blinken {
+  0% {
+    color: black;
+  }
+  50%{
+    color: yellow;
+  }
+  100% {
+    color: red;
+  }
+}
+
+#statistik{
+  animation-name: blinken;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
 }
