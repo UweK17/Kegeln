@@ -1,0 +1,94 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --bgColor: rgb(81, 167, 238);
+
+}
+header{
+  height: calc(5rem + 1vw);
+  background-color: var(--bgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startmenu{
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  height: calc(3rem + 1vw);
+}
+/*AUFBAU GRID___________________________________________  */
+.fotogrid{
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: calc(1rem + 1vw);
+}
+
+.one{
+  grid-area: 1/1/2/2;
+  background-image: url(/1.jpg);
+}
+
+.two{
+  grid-area: 1/2/2/3;
+  background-image: url(/2.jpg);
+}
+
+.three{
+  grid-area: 1/3/2/4;
+  background-image: url(/3.jpg);
+}
+
+.four{
+  grid-area: 2/1/3/2;
+  background-image: url(/4.jpg);
+}
+
+.five{
+  grid-area: 2/2/3/3;
+  background-image: url(/5.jpg);
+}
+
+.six{
+  grid-area: 2/3/3/4;
+  background-image: url(/6.jpg);
+}
+
+.seven{
+  grid-area: 3/1/4/2;
+  background-image: url(/7.jpg);
+}
+
+.eight{
+  grid-area: 3/2/4/3;
+  background-image: url(/8.jpg);
+}
+
+.nine{
+  grid-area: 3/3/4/4;
+  background-image: url(/9.jpg);
+}
+
+.ten{
+  grid-area: 4/2/5/3;
+  background-image: url(/10.jpg);
+}
+
+/*STYLING DER FOTOS______________________________________________  */
+.mgfotos{
+  border: 2px solid blue;
+  width: 29vw;
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position: center;
+ }
+
