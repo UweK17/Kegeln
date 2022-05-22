@@ -11,6 +11,7 @@
 <body>
   <header>Piepenköppe</header>
   <main>
+    <!-- MENU_____________________________________________________ -->
     <div class="startmenu">
       <a href="#mitglieder">
         <button class="button mitglieder">
@@ -22,12 +23,16 @@
           Nächster Kegelabend: Zusagen
         </button>
       </a>
-      <button class="button termine">
-        Termine
-      </button>
+      <a href="#termine">
+        <button class="button termine">
+          Termine
+        </button>
+      </a>
       <button class="button statistik">
         Statistik
       </button>
+    </div>
+      <!--MITGLIEDER FOTOS_______________________________________  -->
         <div class="fotogrid" id="mitglieder">
           <div class="mgfotos one">
           </div>
@@ -54,6 +59,7 @@
           <div class="mgfotos twelve">
           </div>
         </div>
+        <!-- ZUSAGEN KEGELABEND___________________________________ -->
         <form action="https://formspree.io/f/mwkywvky" method="post" id="aktuellKegelabend">
           <fieldset class="zusagen">
             <legend>Zusagen nächster Kegelabend</legend>
@@ -107,7 +113,27 @@
             </div>
           </fieldset>
         </form>
-    </div>
+<!-- TERMINE___________________________________________________ -->
+        <div id="termine">
+          <table>
+            <tr>
+              <th>Datum</th>
+              <th>Datum</th>
+              <th>Datum</th>
+            </tr>
+            <tr>
+              <td>17.06.2022</td>
+              <td>15.07.2022</td>
+              <td>12.08.2022</td>
+            </tr>
+            <tr>
+              <td>09.09.2022</td>
+              <td>07.10.2022</td>
+              <td>04.11.2022</td>
+            </tr>
+          </table>
+        </div>
+        <!-- STATISTIK___________________________________________ -->
   </main>
   <footer></footer>
 
