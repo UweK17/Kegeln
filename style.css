@@ -25,6 +25,7 @@ header{
 
 .vereinsLogo{
   width: 25vw;
+  height: calc(5rem + 1vw);
 }
 
 .startmenu{
