@@ -12,19 +12,23 @@
   <header>Piepenköppe</header>
   <main>
     <div class="startmenu">
-      <button class="button mitglieder">
-        Mitglieder
-      </button>
-      <button class="button aktuellKegelabend">
-        Aktueller Kegelabend
-      </button>
+      <a href="#mitglieder">
+        <button class="button mitglieder">
+          Mitglieder
+        </button>
+      </a>
+      <a href="#aktuellKegelabend">
+        <button class="button aktuellKegelabend">
+          Nächster Kegelabend: Zusagen
+        </button>
+      </a>
       <button class="button termine">
         Termine
       </button>
       <button class="button statistik">
         Statistik
       </button>
-        <div class="fotogrid">
+        <div class="fotogrid" id="mitglieder">
           <div class="mgfotos one">
           </div>
           <div class="mgfotos two">
@@ -50,7 +54,59 @@
           <div class="mgfotos twelve">
           </div>
         </div>
-      
+        <form action="https://formspree.io/f/mwkywvky" method="post" id="aktuellKegelabend">
+          <fieldset class="zusagen">
+            <legend>Zusagen nächster Kegelabend</legend>
+            <div>
+              <input type="checkbox" name="name" id=" name" checked>
+              <label for="name">Andreas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Anne</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Christoph</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Frank</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Kerstin</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Klaus</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Michael</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Monika</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Sylvia</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Uwe</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Gast</label>
+            </div>
+            <div>
+              <input type="checkbox" name="name" id="name" checked>
+              <label for="name">Gast</label>
+            </div>
+          </fieldset>
+        </form>
     </div>
   </main>
   <footer></footer>

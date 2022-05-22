@@ -21,7 +21,8 @@ header{
   flex-direction: column;
 }
 
-.button{
+.button {
+  width: 100vw;
   height: calc(3rem + 1vw);
   border-radius: calc(0.5rem + 1vw);
   font-size: calc(0.8rem + 1vw);
@@ -122,23 +123,23 @@ header{
 /*KEGELKÖNIG______________________________________  */
 .six::after{
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   font-family: fontawesome;
   content: "\f521";
   color: white;
-  font-size: calc(3rem + 1vw);
+  font-size: calc(1.5rem + 1vw);
 }
 
 /*PUMPENKÖNIG__________________________________________  */
 .ten::after{
   position: absolute;
-  bottom: 5%;
+  bottom: 10%;
   right: 5%;
   font-family: fontawesome;
   content: "\30";
   color: white;
-  font-size: calc(3rem + 1vw);
+  font-size: calc(1.5rem + 1vw);
 }
 
 .two::before{
@@ -177,3 +178,24 @@ header{
 .twelve::before{
   content: "Gast";
 }
+
+/*AKTUELLERKEGELABEND ZUSAGEN________________________________  */
+legend{
+  font-size: calc(2rem + 1vw);
+  font-weight: bolder;
+  text-align: center;
+}
+
+input[type=checkbox]{
+  display: inline-grid;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
+label[for=name]{
+  font-size: calc(1rem + 1vw);
+  text-decoration: underline;
+}
+
+
